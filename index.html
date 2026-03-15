@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uncle Brews - Home</title>
+    <link rel="icon" href="placeholder-logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="logo.png">
+    
+</head>
+<body>
+
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="logo.png" alt="Uncle Brews Logo">
+                Uncle Brews
+            </a>
+            <div class="nav-menu" id="navMenu">
+                <a href="index.html" class="nav-link active">HOME</a>
+                <a href="menu.html" class="nav-link">MENU</a>
+                <a href="merchandise.html" class="nav-link">MERCHANDISE</a>
+                <a href="about.html" class="nav-link">ABOUT US</a>
+                <a href="find-branch.html" class="nav-link">FIND BRANCH</a>
+                <a href="signin.html" class="nav-link signin-btn">SIGN IN</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Fill your life with magical and wonderful memories — just like the colors of the rainbow</h1>
+            <p>Handcrafted drinks that bring warmth, color, and joy to every visit.</p>
+            <button class="cta-button">Explore Menu ☕</button>
+        </div>
+
+        <!-- Beverage Carousel -->
+        <div class="hero-carousel" id="heroCarousel">
+            <div class="carousel-track" id="carouselTrack">
+
+                <div class="carousel-slide" data-label="Caramel Macchiato">
+                    <img src="https://images.unsplash.com/photo-1578314675249-a6910f80cc4e?w=700&q=85" alt="Caramel Macchiato">
+                    <span class="carousel-price">&#8369;165</span>
+                </div>
+
+                <div class="carousel-slide" data-label="Brown Sugar Milk Tea">
+                    <img src="https://images.unsplash.com/photo-1607083206968-13611e3d76db?w=700&q=85" alt="Brown Sugar Milk Tea">
+                    <span class="carousel-price">&#8369;140</span>
+                </div>
+
+                <div class="carousel-slide" data-label="Matcha Latte">
+                    <img src="https://images.unsplash.com/photo-1515823662972-da6a2e4d3002?w=700&q=85" alt="Matcha Latte">
+                    <span class="carousel-price">&#8369;155</span>
+                </div>
+
+                <div class="carousel-slide" data-label="Taro Milk Tea">
+                    <img src="https://images.unsplash.com/photo-1546173159-315724a31696?w=700&q=85" alt="Taro Milk Tea">
+                    <span class="carousel-price">&#8369;145</span>
+                </div>
+
+                <div class="carousel-slide" data-label="Mango Shake">
+                    <img src="https://images.unsplash.com/photo-1502741224143-90386d7f8c82?w=700&q=85" alt="Mango Shake">
+                    <span class="carousel-price">&#8369;150</span>
+                </div>
+
+                <div class="carousel-slide" data-label="Strawberry Cooler">
+                    <img src="https://images.unsplash.com/photo-1553361371-9b22f78e8b1d?w=700&q=85" alt="Strawberry Cooler">
+                    <span class="carousel-price">&#8369;125</span>
+                </div>
+
+            </div>
+            <button class="carousel-btn prev" id="carouselPrev" aria-label="Previous">&#8592;</button>
+            <button class="carousel-btn next" id="carouselNext" aria-label="Next">&#8594;</button>
+            <div class="carousel-dots" id="carouselDots"></div>
+        </div>
+    </section>
+
+    <section class="featured">
+        <div class="container">
+            <div class="featured-content">
+                <div class="featured-text">
+                    <h2>Feel na feel ang <span class="highlight">Init</span></h2>
+                    <p>Sa Bacolod Organic Farmers Festival? Tara, subukin ang refreshing drinks ng Uncle Brew. Panlaban sa init ng panahon! Maari ka nang mag-order thru Maxim, Grab, at Food Panda.</p>
+                    <button class="order-btn">Order Now</button>
+                </div>
+                <div class="featured-image">
+                    <img src="https://images.unsplash.com/photo-1570197788417-0e82375c9371?w=800&q=80" alt="Refreshing Drinks">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="gallery">
+        <div class="container">
+            <h2>HIGHLIGHT STORY</h2>
+            <p>Uncle Brew is more than just a cup of coffee — we're about building genuine connections within our community.</p>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://tse3.mm.bing.net/th/id/OIP.uvuvegiDQUS5UoYehrpCkgHaE8?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Coffee Shop Interior">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://tse4.mm.bing.net/th/id/OIP.hd5KalkTefpqjYAieyDO1gHaE9?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Fresh Coffee">
+                </div>
+                <div class="gallery-item">
+                    <img src="taro.jpg" alt="Milk Tea">
+                </div>
+                <div class="gallery-item">
+                    <img src="team1.jpg" alt="Barista at Work">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=600&q=80" alt="Cafe Vibes">
+                </div>
+            </div>
+            <button class="see-more-btn">See More</button>
+        </div>
+    </section>
+
+    <section class="deals">
+        <div class="container">
+            <h2>ARE YOU LOOKING FOR THE BEST DEALS?</h2>
+            <label for="store-select" style="position:absolute;width:1px;height:1px;overflow:hidden;">Select store</label>
+            <select id="store-select" class="store-select">
+                <option value="">Select Store</option>
+                <option>IT Park Branch</option>
+                <option>Ayala Center Branch</option>
+                <option>SM City Cebu Branch</option>
+            </select>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Refresh at Our Boba Place</h3>
+                    <p>unclebrewscoffee@gmail.com</p>
+                    <p>0916 787 4391</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Socials</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-link">Facebook</a>
+                        <a href="#" class="social-link">Instagram</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Find Us</h3>
+                    <p><a href="find-branch.html" style="color:var(--orange);text-decoration:none;">View all branches →</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom"><p>© 2025 Uncle Brews. All rights reserved.</p></div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

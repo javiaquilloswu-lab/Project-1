@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uncle Brews - Find a Branch</title>
+    <link rel="icon" href="placeholder-logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+</head>
+<body>
+
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="logo.png" alt="Uncle Brews Logo">
+                Uncle Brews
+            </a>
+            <div class="nav-menu" id="navMenu">
+                <a href="index.html" class="nav-link">HOME</a>
+                <a href="menu.html" class="nav-link">MENU</a>
+                <a href="merchandise.html" class="nav-link">MERCHANDISE</a>
+                <a href="about.html" class="nav-link">ABOUT US</a>
+                <a href="find-branch.html" class="nav-link active">FIND BRANCH</a>
+                <a href="signin.html" class="nav-link signin-btn">SIGN IN</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="branch-hero">
+        <div class="container">
+            <h1>Find a Branch</h1>
+            <p>Locate the nearest Uncle Brews branch within Cebu City.</p>
+        </div>
+        
+    </section>
+
+    <section class="branch-page">
+        <div class="container">
+            <div class="branch-layout">
+                <aside class="branch-sidebar">
+                    <h2>Our Branches</h2>
+                    <p>Click a branch to fly to it on the map, or hit Get Directions.</p>
+                    <ul id="branch-list" class="branch-list"></ul>
+                </aside>
+                <div class="branch-map">
+                    <div id="map"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Refresh at Our Boba Place</h3>
+                    <p>unclebrewscoffee@gmail.com</p>
+                    <p>0916 787 4391</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Socials</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-link">Facebook</a>
+                        <a href="#" class="social-link">Instagram</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Find Us</h3>
+                    <p>You're already here! 📍</p>
+                </div>
+            </div>
+            <div class="footer-bottom"><p>© 2025 Uncle Brews. All rights reserved.</p></div>
+        </div>
+    </footer>
+
+    <!-- Leaflet JS must come BEFORE script.js so L is defined when initMap() runs -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
