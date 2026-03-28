@@ -448,11 +448,13 @@ IMAGE CAROUSEL
 }
 
 .add-to-cart {
-    width: 100%;
+    width: calc(100% - 2.8rem);
+    margin: 0 1.4rem 1.4rem;
     background: var(--orange-dark);
     color: #fff;
     padding: .9rem;
     font-size: .95rem;
+    border-radius: var(--radius-pill);
 }
 
 .add-to-cart:hover { background: var(--red); }
@@ -858,6 +860,8 @@ IMAGE CAROUSEL
     text-align: center;
     box-shadow: var(--shadow-sm);
     transition: transform var(--transition), box-shadow var(--transition);
+    display: flex;
+    flex-direction: column;
 }
 
 .menu-item:hover {
@@ -884,6 +888,7 @@ IMAGE CAROUSEL
     color: var(--text-muted);
     margin-bottom: .9rem;
     line-height: 1.5;
+    flex: 1;
 }
 
 .menu-item .price {
@@ -919,6 +924,8 @@ IMAGE CAROUSEL
     overflow: hidden;
     box-shadow: var(--shadow-sm);
     transition: transform var(--transition), box-shadow var(--transition);
+    display: flex;
+    flex-direction: column;
 }
 
 .product-item:hover {
@@ -944,6 +951,7 @@ IMAGE CAROUSEL
     padding: 0 1.4rem;
     font-size: .88rem;
     margin-bottom: .8rem;
+    flex: 1;
 }
 
 .price {
@@ -1155,7 +1163,8 @@ IMAGE CAROUSEL
     .merchandise-hero h1,
     .branch-hero h1 { font-size: 2rem; }
 
-    .branch-sidebar { order: 2; max-height: 340px; }
+    .branch-sidebar { order: 2; max-height: none; overflow: visible; }
+    .branch-list    { max-height: 300px; overflow-y: auto; }
     .branch-map    { order: 1; }
     #map           { min-height: 300px; }
 
