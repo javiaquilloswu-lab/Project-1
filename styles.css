@@ -1163,10 +1163,11 @@ IMAGE CAROUSEL
     .merchandise-hero h1,
     .branch-hero h1 { font-size: 2rem; }
 
-    .branch-sidebar { order: 2; max-height: none; overflow: visible; }
-    .branch-list    { max-height: 300px; overflow-y: auto; }
-    .branch-map    { order: 1; }
-    #map           { min-height: 300px; }
+    .branch-layout  { align-items: start; }
+    .branch-sidebar { order: 2; overflow: hidden; }
+    .branch-list    { max-height: 260px; overflow-y: auto; }
+    .branch-map     { order: 1; }
+    #map            { min-height: 300px; }
 
     .gallery-grid  { grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1rem; }
     .products-grid { grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
