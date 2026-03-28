@@ -218,12 +218,16 @@ function initMap() {
             </div>
         `;
 
-        // Click card body → fly to marker
+        // Click card body → fly to marker + highlight active card
         li.addEventListener('click', e => {
             if (e.target.classList.contains('directions-btn')) {
                 window.open(e.target.dataset.url, '_blank', 'noopener');
                 return;
             }
+            // Remove active state from all cards
+            listEl.querySelectorAll('.branch-item').forEach(el => el.classList.remove('active'));
+            // Set active on clicked card
+            li.classList.add('active');
             map.flyTo([branch.lat, branch.lng], 16, { duration: 1.2 });
             branch.marker.openPopup();
         });
