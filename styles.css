@@ -1022,6 +1022,13 @@ IMAGE CAROUSEL
     box-shadow: var(--shadow-md);
 }
 
+.branch-item.active {
+    background: var(--white);
+    border-left-color: var(--orange);
+    transform: translateX(3px);
+    box-shadow: var(--shadow-md);
+}
+
 .branch-item h3 {
     font-size: 1rem;
     color: var(--brown-dark);
